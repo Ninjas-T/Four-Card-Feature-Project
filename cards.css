@@ -6,3 +6,13 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+body{
+  background: hsl(0, 0%, 98%);
+  max-width: 1200px;
+  margin: auto;
+}
+
+main{
+  
+}

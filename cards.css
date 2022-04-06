@@ -1,18 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Alef&family=Asul&family=Catamaran:wght@200&family=Montserrat:wght@100;400&family=Outfit:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&family=Roboto&family=Smooch+Sans&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
   background: hsl(0, 0%, 98%);
+  color: hsl(234, 12%, 34%);
   max-width: 1200px;
+  margin: auto;
+  padding: 35px 30px;
+  transition: 0.3s;
+}
+
+/*HEADER SECTION STYLE START*/
+header {
+  text-align: center;
+}
+
+header h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+header h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 15px;
+  width: 500px;
   margin: auto;
 }
 
-main{
+/*HEADER SECTION STYLE END*/
+
+/*CARD SECTION STYLE START*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 60px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  padding: 30px;
+}
+
+h4 {
+  color: #000;
+}
+
+.text-card {
+  text-align: left;
+}
+
+.text-card p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/*COLORING CARDS START*/
+.card1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card1:hover {
+  border: 4px solid hsl(180, 62%, 55%);
+}
+
+.card2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card2:hover {
+  border: 4px solid hsl(0, 78%, 62%);
+}
+
+.card3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card3:hover {
+  border: 4px solid hsl(34, 97%, 64%);
+}
+
+.card4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card4:hover {
+  border: 4px solid hsl(212, 86%, 64%);
+}
+
+/*COLORING CARDS END*/
+
+
+.card1,
+.card4 {
+  align-self: center;
+}
+
+.two-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/*CARD SECTION STYLE END*/
+
+/* Media Queries IN SMALL SCREEN (Mobile)*/
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+
+  header{
+    width: 100%;
+  }
+  header h2 {
+    font-size: 20px;
+  }
   
+  header h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  header p {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 60px;
+  }
+}
+
+/* Media Queries IN MEDIUM SCREEN (Tablet) */
+@media (min-width:768px) and (max-width: 991px) {
+  .container {
+    display: grid;
+    width: 400px;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 60px;
+  }
+  
+  header p {
+    font-size: 15px;
+    width: 500px;
+    margin: auto;
+  }
+}
+
+/* Media Queries IN LARGER SCREEN (Laptop) */
+@media (min-width:992px) and (max-width: 1199px) {
+  /*NO MEDIA QUERIES NEEDED*/
 }
